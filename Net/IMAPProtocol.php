@@ -2960,6 +2960,7 @@ class Net_IMAPProtocol
         case 'UIDNEXT':
         case 'UIDVALIDITY':
         case 'UNSEEN':
+        case 'SIZE':
         case 'INTERNALDATE':
             return array($token => $this->_parseOneStringResponse($str,
                                                                   __LINE__, 
